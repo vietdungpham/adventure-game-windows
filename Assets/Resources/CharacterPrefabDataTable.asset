@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4126728007fc1439d0cca5e7ef1c33, type: 3}
+  m_Name: CharacterPrefabDataTable
+  m_EditorClassIdentifier: 
+  charactersData:
+  - characterName: 0
+    characterPrefab: {fileID: 6483428899684338810, guid: 98762e1204e2e76468eaa4849b12f6f4, type: 3}
+    characterUIPrefab: {fileID: 5014398302882908670, guid: dc5b06df66f6aa14388e5f3cabe4dbd2, type: 3}
+    priceToUnlock: 0
+  - characterName: 1
+    characterPrefab: {fileID: 1799153108427321805, guid: c83440c8ecdac65489ded599a1c68fd0, type: 3}
+    characterUIPrefab: {fileID: 8893393994129635163, guid: b334b9f9ad457f440b9ce1cef681e99d, type: 3}
+    priceToUnlock: 150
+  - characterName: 2
+    characterPrefab: {fileID: 7204005763982064128, guid: 62974df407f9d1f46966b941c33964a5, type: 3}
+    characterUIPrefab: {fileID: 6207937189660395836, guid: c5ac1b0cbcf052645bd2e118f5853928, type: 3}
+    priceToUnlock: 200
+  - characterName: 3
+    characterPrefab: {fileID: 3468781886021462393, guid: 580a3e74610c1c54288ea508b7caa9a5, type: 3}
+    characterUIPrefab: {fileID: 7701742335709313439, guid: 6e4469289f823ab4a886079024914904, type: 3}
+    priceToUnlock: 350

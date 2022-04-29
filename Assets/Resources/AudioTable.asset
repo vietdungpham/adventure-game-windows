@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e87f4209294c14ea4c96e7e36d4170, type: 3}
+  m_Name: AudioTable
+  m_EditorClassIdentifier: 
+  data:
+  - key: 0
+    clip: {fileID: 8300000, guid: 7d9dd857b284d5f41bdce6b704bf7e34, type: 3}
+  - key: 1
+    clip: {fileID: 8300000, guid: 9f1ec25b8471afc41a0f43a8c4e0b41c, type: 3}
+  - key: 2
+    clip: {fileID: 8300000, guid: 5852c2975a201574fa73dc5a1b379bf6, type: 3}
+  - key: 3
+    clip: {fileID: 8300000, guid: 02bb857c5d4fa5c46a9bec14536eb85e, type: 3}
+  - key: 4
+    clip: {fileID: 8300000, guid: 33e4771e3bf01f346bd141e14d2cbb5b, type: 3}
+  - key: 5
+    clip: {fileID: 8300000, guid: 6d228f4ef10f68f46bb3759fad9ef9f8, type: 3}
+  - key: 6
+    clip: {fileID: 8300000, guid: a01ef6fe23b7e4c44a05524b92688214, type: 3}

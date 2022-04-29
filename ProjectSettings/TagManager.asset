@@ -12,12 +12,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Trap
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Ground
+  - Item
   - 
   - 
   - 
@@ -44,4 +44,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Trap
+    uniqueID: 3051983943
+    locked: 0
+  - name: Ground
+    uniqueID: 220075323
+    locked: 0
+  - name: Item
+    uniqueID: 3229851971
+    locked: 0
+  - name: Player
+    uniqueID: 2465627619
+    locked: 0
+  - name: UI
+    uniqueID: 2072477025
     locked: 0

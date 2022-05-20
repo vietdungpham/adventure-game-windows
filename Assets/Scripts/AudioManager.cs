@@ -13,7 +13,6 @@ public class AudioManager : MonoBehaviour
     private static AudioManager instance = null;
 
     private Dictionary<AudioClipId, AudioClip> audioClipDict;
-    private List<AudioSource> soundEffects = new List<AudioSource>();
 
     public static AudioManager Instance
     {
@@ -76,16 +75,11 @@ public class AudioManager : MonoBehaviour
         instance.PlaySFX(key);
     }
 
-#if UNITY_EDITOR
     public void PlaySFX(AudioClipId key)
     {
         if (audioClipDict.ContainsKey(key))
         {
-            PlaySFX(audioClipDict[key]);
-        }
-        else
-        {
-            Debug.LogWarning("Audio Clip key " + key + " is not exist");
+            PlaySFX(effectsSource, audioClipDict[key]);
         }
     }
 
@@ -93,45 +87,24 @@ public class AudioManager : MonoBehaviour
     {
         if (audioClipDict.ContainsKey(key))
         {
-            PlayMusic(audioClipDict[key], forceReplay);
+            PlayMusic(musicSource, audioClipDict[key], forceReplay);
         }
-        else
-        {
-            Debug.LogWarning("Audio Clip key " + key + " is not exist");
-        }
-    }
-#else
-    public void PlaySFX(AudioClipId key)
-    {
-        PlaySFX(audioClipDict[key]);
-    }
-
-    public void PlayMusic(AudioClipId key)
-    {
-        PlayMusic(audioClipDict[key]);
-    }
-#endif
-    public void PlaySFX(AudioClip clip)
-    {
-        if (clip == null)
-            return;
-        effectsSource.PlayOneShot(clip);
-    }
-
-    public void PlayMusic(AudioClip clip, bool forceReplay = false)
-    {
-        if (musicSource.isPlaying && !forceReplay) return;
-        musicSource.clip = clip;
-        musicSource.Play();
     }
 
     public void PlaySFX(AudioSource audioSource)
-    {
+    {        
         audioSource.Play();
     }
 
     public void PlaySFX(AudioSource audioSource, AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+
+    public void PlayMusic(AudioSource audioSource, AudioClip clip, bool forceReplay)
+    {
+        audioSource.clip = clip;
+        audioSource.loop = forceReplay;
+        audioSource.Play();
     }
 }
